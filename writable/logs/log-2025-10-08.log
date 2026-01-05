@@ -1,0 +1,154 @@
+INFO - 2025-10-08 15:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 15:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 15:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 15:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-08 16:46:09 --> mysqli_sql_exception: Unknown column 'atividade_descricao' in 'field list' in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 16:46:09 --> Unknown column 'atividade_descricao' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_descricao`, `tipo`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_descricao:, :tipo:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-08 16:46:26 --> mysqli_sql_exception: Unknown column 'atividade_descricao' in 'field list' in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 16:46:26 --> Unknown column 'atividade_descricao' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_descricao`, `tipo`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_descricao:, :tipo:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-10-08 16:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-08 16:56:21 --> mysqli_sql_exception: Unknown column 'atividade_descricao' in 'field list' in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 16:56:21 --> Unknown column 'atividade_descricao' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_descricao`, `tipo`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_descricao:, :tipo:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-10-08 16:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 16:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-08 16:58:51 --> mysqli_sql_exception: Column 'atividade_id' cannot be null in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 16:58:51 --> Column 'atividade_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_nome`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_nome:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-08 16:59:06 --> mysqli_sql_exception: Column 'atividade_id' cannot be null in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 16:59:06 --> Column 'atividade_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_nome`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_nome:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(173): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-10-08 16:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-08 17:00:02 --> mysqli_sql_exception: Column 'atividade_id' cannot be null in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(172): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-08 17:00:02 --> Column 'atividade_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes_atividades` (`contribuinte_id`, `atividade_id`, `atividade_nome`, `contribuinte_nome`) VALUES (:contribuinte_id:, :atividade_id:, :atividade_nome:, :contribuinte_nome:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(172): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('4', '4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-10-08 17:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 18:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 18:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 18:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 18:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

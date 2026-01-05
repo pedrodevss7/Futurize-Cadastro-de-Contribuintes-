@@ -1,0 +1,49 @@
+INFO - 2025-11-14 05:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 05:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 05:37:33 --> Payload editar id='1145' : {"tipo_pessoa":"juridica","status":"inativo","data_baixa":"2025-11-14","codigo":"1145","inscricao_municipal":"381154916","cpf_cnpj":"133.756.566-02","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"CASA 02","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","estado":"","cep":"36576-344","telefone1":"(32) 91312-3332","telefone2":"(32) 32313-1233","email":"pedrofutebol1@hotmail.com","estado_civil":"","atividade_data":"","cnae_principal":"1","tipo_pessoa_rj":"","atividades":[],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}],"id":"1145"}
+INFO - 2025-11-14 05:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 16:06:33 --> Payload cadastrar: {"tipo_pessoa":"fisica","tipo_pessoa_rj":"","status":"ativo","data_baixa":"","codigo":"1191","inscricao_municipal":"3213123","cpf_cnpj":"042.173.866-99","razao_social":"SIDNEY LOPES PINTO","nome_fantasia":"","inscricao_estadual":"","endereco":"RUA CARMITA PACHECO","numero":"334","complemento":"APT 203","bairro":"CENTRO","cidade":"VI\u00c7OSA","estado":"MG","cep":"36570095","telefone1":"3235551500","telefone2":"(32) 98423-2340","email":"sidneyfuturize@gmail.com","estado_civil":"casado","atividade_data":"","atividades":[],"cnaes":[]}
+INFO - 2025-11-14 16:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-14 16:14:54 --> Payload cadastrar: {"tipo_pessoa":"juridica","tipo_pessoa_rj":"simples_nacional","status":"ativo","data_baixa":"","codigo":"1199","inscricao_municipal":"","cpf_cnpj":"00.623.904\/0001-73","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"PEDRO LUCAS DA SILVA SANTOS","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","estado":"MG","cep":"36576344","telefone1":"","telefone2":"","email":"","estado_civil":"","atividade_data":"2025-11-14","cnae_principal":"pre_0","atividades":[{"numero":"2","nome":"AVIADOR","atividade_id":"pre_1","data":"2025-11-14","principal":true,"tipo":"pre_cadastrada"}],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}]}
+DEBUG - 2025-11-14 16:14:55 --> Processando atividade (cadastrar) payload: {"numero":"2","nome":"AVIADOR","atividade_id":"pre_1","data":"2025-11-14","principal":true,"tipo":"pre_cadastrada"}
+DEBUG - 2025-11-14 16:14:55 --> Insert pivot atividades_contribuintes result=true atividade_id=2
+INFO - 2025-11-14 16:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 16:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-14 18:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-14 23:54:30 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-14 23:55:17 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-11-14 23:55:28 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-14 23:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-14 23:55:44 --> Class "App\Filters\AuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-14 23:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

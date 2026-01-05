@@ -1,0 +1,9 @@
+INFO - 2026-01-05 17:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-01-05 17:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-05 17:31:35 --> Payload editar id='1145' : {"tipo_pessoa":"juridica","tipo_pessoa_rj":"outros","status":"ativo","data_baixa":"","codigo":"1145","inscricao_municipal":"381154916","cpf_cnpj":"133.756.566-02","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"CASA 02","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","estado":"","cep":"36576-344","telefone1":"(32) 91312-3332","telefone2":"(32) 32313-1233","email":"pedrofutebol1@hotmail.com","estado_civil":"","atividade_data":"","cnae_principal":"1","atividades":[],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}],"id":"1145"}

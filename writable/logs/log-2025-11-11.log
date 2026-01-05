@@ -1,0 +1,198 @@
+INFO - 2025-11-11 15:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 15:38:48 --> mysqli_sql_exception: Table 'futurize_stm.login_attempts' doesn't exist in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(1686): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\futurize.STM\system\Model.php(605): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\futurize.STM\app\Models\LoginAttemptModel.php(27): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\futurize.STM\app\Controllers\AuthController.php(46): App\Models\LoginAttemptModel->recentFailures('admin1', 1)
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\AuthController->login()
+#8 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-11-11 15:38:48 --> Table 'futurize_stm.login_attempts' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1686): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `login_attempts`
+WHERE (`username_or_email` = \'admin1\' OR `ip` = \'admin1\')
+AND `success` = :success:
+AND `created_at` >= :created_at:', [...], false)
+ 2 SYSTEMPATH\Model.php(605): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\LoginAttemptModel.php(27): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\AuthController.php(46): App\Models\LoginAttemptModel->recentFailures('admin1', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-11-11 15:40:26 --> mysqli_sql_exception: Incorrect index name 'PRIMARY' in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\laragon\www\futurize.STM\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 C:\laragon\www\futurize.STM\app\Database\Migrations\2025-11-11-000000_CreateAuthenticationTables.php(67): CodeIgniter\Database\Forge->createTable()
+#5 C:\laragon\www\futurize.STM\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateAuthenticationTables->up()
+#6 C:\laragon\www\futurize.STM\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 C:\laragon\www\futurize.STM\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 C:\laragon\www\futurize.STM\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 C:\laragon\www\futurize.STM\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 C:\laragon\www\futurize.STM\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2025-11-11 15:40:45 --> mysqli_sql_exception: Duplicate key name 'username' in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\laragon\www\futurize.STM\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 C:\laragon\www\futurize.STM\app\Database\Migrations\2025-11-11-000000_CreateAuthenticationTables.php(67): CodeIgniter\Database\Forge->createTable()
+#5 C:\laragon\www\futurize.STM\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateAuthenticationTables->up()
+#6 C:\laragon\www\futurize.STM\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 C:\laragon\www\futurize.STM\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 C:\laragon\www\futurize.STM\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 C:\laragon\www\futurize.STM\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 C:\laragon\www\futurize.STM\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2025-11-11 15:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 15:42:53 --> mysqli_sql_exception: Table 'futurize_stm.auth_logs' doesn't exist in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\AuthController.php(184): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\app\Controllers\AuthController.php(71): App\Controllers\AuthController->log('login_failed_ti...', '1', '::1')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\AuthController->login()
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-11-11 15:42:53 --> Table 'futurize_stm.auth_logs' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auth_logs` (`usuario_id`, `action`, `ip`, `user_agent`, `meta`, `created_at`) VALUES (:usuario_id:, :action:, :ip:, :user_agent:, :meta:, :created_at:)', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(184): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(71): App\Controllers\AuthController->log('login_failed_tipo_mismatch', '1', '::1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-11 15:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 15:43:01 --> mysqli_sql_exception: Table 'futurize_stm.auth_logs' doesn't exist in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\AuthController.php(184): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\app\Controllers\AuthController.php(79): App\Controllers\AuthController->log('login_failed', '1', '::1')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\AuthController->login()
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-11-11 15:43:01 --> Table 'futurize_stm.auth_logs' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auth_logs` (`usuario_id`, `action`, `ip`, `user_agent`, `meta`, `created_at`) VALUES (:usuario_id:, :action:, :ip:, :user_agent:, :meta:, :created_at:)', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(184): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(79): App\Controllers\AuthController->log('login_failed', '1', '::1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-11 15:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 15:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 15:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 15:46:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`futurize_stm`.`contribuintes`, CONSTRAINT `contribuintes_CON_PRE_Codigo_foreign` FOREIGN KEY (`CON_PRE_Codigo`) REFERENCES `prefeituras` (`PRE_Codigo`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\futurize.STM\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\futurize.STM\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\futurize.STM\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\futurize.STM\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\futurize.STM\app\Models\ContribuinteModel.php(91): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(166): App\Models\ContribuinteModel->insertComposite(Array)
+#10 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->cadastrar()
+#11 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#12 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2025-11-11 15:46:06 --> Cannot add or update a child row: a foreign key constraint fails (`futurize_stm`.`contribuintes`, CONSTRAINT `contribuintes_CON_PRE_Codigo_foreign` FOREIGN KEY (`CON_PRE_Codigo`) REFERENCES `prefeituras` (`PRE_Codigo`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contribuintes` (`CON_PRE_Codigo`, `CON_Codigo`, `CON_CPFCNPJ`, `CON_Nome`, `CON_Endereco`, `CON_Numero`, `CON_Complemento`, `CON_Bairro`, `CON_Cidade`, `CON_CEP`, `CON_Estado`, `CON_Telefone1`, `CON_Telefone2`, `CON_Email`, `CON_InscricaoMunicipal`, `CON_InscricaoMunicipalAno`) VALUES (:CON_PRE_Codigo:, :CON_Codigo.1:, :CON_CPFCNPJ:, :CON_Nome:, :CON_Endereco:, :CON_Numero:, :CON_Complemento:, :CON_Bairro:, :CON_Cidade:, :CON_CEP:, :CON_Estado:, :CON_Telefone1:, :CON_Telefone2:, :CON_Email:, :CON_InscricaoMunicipal:, :CON_InscricaoMunicipalAno:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Models\ContribuinteModel.php(91): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\ContribuinteController.php(166): App\Models\ContribuinteModel->insertComposite([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->cadastrar()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-11-11 15:46:53 --> Erro no cadastro: Undefined array key "numero"
+ERROR - 2025-11-11 15:48:18 --> Erro no cadastro: Undefined array key "numero"
+INFO - 2025-11-11 15:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 15:49:18 --> Erro no cadastro: Undefined array key "numero"
+INFO - 2025-11-11 15:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 15:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 16:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 17:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-11 17:40:39 --> Erro no cadastro: Undefined array key "atividade_id"
+INFO - 2025-11-11 17:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 23:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 23:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-11 23:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-11 23:33:27 --> Payload editar id='1145' : {"tipo_pessoa":"juridica","tipo_pessoa_rj":"simples_nacional","status":"ativo","data_baixa":"","codigo":"1145","inscricao_municipal":"381154916","cpf_cnpj":"133.756.566-02","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"CASA 02","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","cep":"36576-344","telefone1":"(32) 91312-3332","telefone2":"(32) 32313-1233","email":"pedrofutebol1@hotmail.com","estado_civil":"","atividade_data":"2025-11-11","cnae_principal":"1","atividades":[],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}],"id":"1145","CON_codigo":"1145"}
+INFO - 2025-11-11 23:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-11 23:47:39 --> Payload editar id='1145' : {"tipo_pessoa":"juridica","tipo_pessoa_rj":"simples_nacional","status":"ativo","data_baixa":"","codigo":"1145","inscricao_municipal":"381154916","cpf_cnpj":"133.756.566-02","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"CASA 02","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","cep":"36576-344","telefone1":"(32) 91312-3332","telefone2":"(32) 32313-1233","email":"pedrofutebol1@hotmail.com","estado_civil":"","atividade_data":"2025-11-11","cnae_principal":"1","atividades":[{"numero":"5","nome":"engenheiro","atividade_id":"pre_4","data":"2025-11-11","principal":true,"tipo":"pre_cadastrada"}],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}],"id":"1145"}
+DEBUG - 2025-11-11 23:47:39 --> Processando atividade (editar) payload: {"numero":"5","nome":"engenheiro","atividade_id":"pre_4","data":"2025-11-11","principal":true,"tipo":"pre_cadastrada"}
+ERROR - 2025-11-11 23:47:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`futurize_stm`.`atividades_contribuintes`, CONSTRAINT `atividades_contribuintes_ATI_Codigo_foreign` FOREIGN KEY (`ATI_Codigo`) REFERENCES `atividades` (`ATI_Codigo`) ON DELETE CASCADE ON UPD in C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\futurize.STM\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\laragon\www\futurize.STM\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\laragon\www\futurize.STM\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\laragon\www\futurize.STM\app\Controllers\ContribuinteController.php(318): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\futurize.STM\system\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('1145', '1145')
+#6 C:\laragon\www\futurize.STM\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+#7 C:\laragon\www\futurize.STM\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\futurize.STM\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-11-11 23:47:39 --> Cannot add or update a child row: a foreign key constraint fails (`futurize_stm`.`atividades_contribuintes`, CONSTRAINT `atividades_contribuintes_ATI_Codigo_foreign` FOREIGN KEY (`ATI_Codigo`) REFERENCES `atividades` (`ATI_Codigo`) ON DELETE CASCADE ON UPD
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `atividades_contribuintes` (`CON_PRE_Codigo`, `CON_Codigo`, `ATI_Codigo`) VALUES (:CON_PRE_Codigo:, :CON_Codigo:, :ATI_Codigo:)', [...], false)
+ 2 APPPATH\Controllers\ContribuinteController.php(318): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContribuinteController->editar('1145', '1145')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContribuinteController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+DEBUG - 2025-11-11 23:52:13 --> Payload editar id='1145' : {"tipo_pessoa":"juridica","tipo_pessoa_rj":"simples_nacional","status":"ativo","data_baixa":"","codigo":"1145","inscricao_municipal":"381154916","cpf_cnpj":"133.756.566-02","razao_social":"PEDRO LUCAS DA SILVA SANTOS","nome_fantasia":"","inscricao_estadual":"","endereco":"JOSE CAMILO FIALHO","numero":"64","complemento":"CASA 02","bairro":"SILVESTRE","cidade":"VI\u00c7OSA","cep":"36576-344","telefone1":"(32) 91312-3332","telefone2":"(32) 32313-1233","email":"pedrofutebol1@hotmail.com","estado_civil":"","atividade_data":"2025-11-11","cnae_principal":"1","atividades":[{"numero":"5","nome":"engenheiro","atividade_id":"pre_4","data":"2025-11-11","principal":true,"tipo":"pre_cadastrada"}],"cnaes":[{"numero":"36576344","nome":"PEDRO LUCAS DA SILVA SANTOS","tipo":"primario","novo":false}],"id":"1145"}
+DEBUG - 2025-11-11 23:52:13 --> Processando atividade (editar) payload: {"numero":"5","nome":"engenheiro","atividade_id":"pre_4","data":"2025-11-11","principal":true,"tipo":"pre_cadastrada"}
+DEBUG - 2025-11-11 23:52:13 --> Insert pivot (editar) result=true atividade_id=5
